@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StringResources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Resources>
+<!-- Most of the identifiers in "Menu" sections are not in ID_RTEditor_... format for backward compatibility -->
+
+
+<!-- Menu File -->
+
+
+<StringResource value="파일" id="ID_RTEditor_MenuFile_Button"/>
+
+<StringResource value="파일" id="MenuFile"/>
+
+<StringResource value="New Scene" id="New Scene"/>
+
+<StringResource value="Save Scene" id="Save Scene"/>
+
+<StringResource value="Save Scene As..." id="Save Scene As..."/>
+
+<StringResource value="Import Assets..." id="Import Assets"/>
+
+<StringResource value="Import From File..." id="Import From File"/>
+
+<StringResource value="Manage Projects..." id="Manage Projects"/>
+
+<StringResource value="Close" id="Close"/>
+
+<!-- Menu Edit -->
+
+
+<StringResource value="Edit" id="ID_RTEditor_MenuEdit_Button"/>
+
+<StringResource value="Edit" id="MenuEdit"/>
+
+<StringResource value="Undo" id="Undo"/>
+
+<StringResource value="Redo" id="Redo"/>
+
+<StringResource value="Duplicate" id="Duplicate"/>
+
+<StringResource value="Delete" id="Delete"/>
+
+<StringResource value="Play" id="Play"/>
+
+<StringResource value="Stop" id="Stop"/>
+
+<StringResource value="Settings..." id="Settings"/>
+
+<!-- Menu GameObject -->
+
+
+<StringResource value="Game Object" id="ID_RTEditor_MenuGameObject_Button"/>
+
+<StringResource value="Game Object" id="MenuGameObject"/>
+
+<StringResource value="Create Empty" id="Create Empty"/>
+
+<StringResource value="Create Empty Child" id="Create Empty Child"/>
+
+<StringResource value="3D Object" id="3D Object"/>
+
+<StringResource value="Cube" id="Cube"/>
+
+<StringResource value="Sphere" id="Sphere"/>
+
+<StringResource value="Capsule" id="Capsule"/>
+
+<StringResource value="Cylinder" id="Cylinder"/>
+
+<StringResource value="Plane" id="Plane"/>
+
+<StringResource value="Quad" id="Quad"/>
+
+<StringResource value="Light" id="Light"/>
+
+<StringResource value="Directional" id="Directional"/>
+
+<StringResource value="Point" id="Point"/>
+
+<StringResource value="Spot" id="Spot"/>
+
+<StringResource value="Camera" id="Camera"/>
+
+<!-- Known Game Objects -->
+
+
+<StringResource value="Empty" id="ID_RTEditor_KGO_Empty"/>
+
+<StringResource value="UI" id="ID_RTEditor_KGO_UI"/>
+
+<StringResource value="Canvas" id="ID_RTEditor_KGO_Canvas"/>
+
+<StringResource value="Image" id="ID_RTEditor_KGO_Image"/>
+
+<StringResource value="Button" id="ID_RTEditor_KGO_Button"/>
+
+<StringResource value="Text" id="ID_RTEditor_KGO_Text"/>
+
+<StringResource value="Toggle" id="ID_RTEditor_KGO_Toggle"/>
+
+<StringResource value="Text - TextMeshPro" id="ID_RTEditor_KGO_Text_TMP"/>
+
+<!-- Menu Window -->
+
+
+<StringResource value="Window" id="ID_RTEditor_MenuWindow_Button"/>
+
+<StringResource value="Window" id="MenuWindow"/>
+
+<StringResource value="Layouts" id="Layouts"/>
+
+<StringResource value="Default" id="Default"/>
+
+<StringResource value="General" id="General"/>
+
+<StringResource value="편집창" id="Scene"/>
+
+<StringResource value="Game" id="Game"/>
+
+<StringResource value="정보창" id="Inspector"/>
+
+<StringResource value="데이터 구조창" id="Hierarchy"/>
+
+<StringResource value="Project" id="Project"/>
+
+<StringResource value="Console" id="Console"/>
+
+<StringResource value="Animation" id="Animation"/>
+
+<!-- Menu Help -->
+
+
+<StringResource value="Help" id="ID_RTEditor_MenuHelp_Button"/>
+
+<StringResource value="Help" id="MenuHelp"/>
+
+<StringResource value="About RTE" id="About RTE"/>
+
+<!-- Window Manager -->
+
+
+<StringResource value="편집창" id="ID_RTEditor_WM_Header_Scene"/>
+
+<StringResource value="Game" id="ID_RTEditor_WM_Header_Game"/>
+
+<StringResource value="데이터 구조창" id="ID_RTEditor_WM_Header_Hierarchy"/>
+
+<StringResource value="정보창" id="ID_RTEditor_WM_Header_Inspector"/>
+
+<StringResource value="Project" id="ID_RTEditor_WM_Header_Project"/>
+
+<StringResource value="Console" id="ID_RTEditor_WM_Header_Console"/>
+
+<StringResource value="Animation" id="ID_RTEditor_WM_Header_Animation"/>
+
+<StringResource value="Save Scene As" id="ID_RTEditor_WM_Header_SaveScene"/>
+
+<StringResource value="Save Asset As" id="ID_RTEditor_WM_Header_SaveAsset"/>
+
+<StringResource value="Manage Projects" id="ID_RTEditor_WM_Header_OpenProject"/>
+
+<StringResource value="Select Asset Library" id="ID_RTEditor_WM_Header_SelectAssetLibrary"/>
+
+<StringResource value="Select Assets" id="ID_RTEditor_WM_Header_ImportAssets"/>
+
+<StringResource value="About" id="ID_RTEditor_WM_Header_About"/>
+
+<StringResource value="Select Object" id="ID_RTEditor_WM_Header_SelectObject"/>
+
+<StringResource value="Select Color" id="ID_RTEditor_WM_Header_SelectColor"/>
+
+<StringResource value="Select Properties" id="ID_RTEditor_WM_Header_SelectAnimationProperties"/>
+
+<StringResource value="Import File" id="ID_RTEditor_WM_Header_ImportFile"/>
+
+<StringResource value="Settings" id="ID_RTEditor_WM_Header_Settings"/>
+
+<StringResource value="Save File" id="ID_RTEditor_WM_Header_SaveFile"/>
+
+<StringResource value="Open File" id="ID_RTEditor_WM_Header_OpenFile"/>
+
+<StringResource value="OK" id="ID_RTEditor_WM_Dialog_OK"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_WM_Dialog_Cancel"/>
+
+<!-- Tools Panel -->
+
+
+<StringResource value="Play" id="ID_RTEditor_ToolsPanel_Play"/>
+
+<StringResource value="Undo" id="ID_RTEditor_ToolsPanel_Undo"/>
+
+<StringResource value="Redo" id="ID_RTEditor_ToolsPanel_Redo"/>
+
+<StringResource value="Hand Tool" id="ID_RTEditor_ToolsPanel_HandTool"/>
+
+<StringResource value="Move Tool" id="ID_RTEditor_ToolsPanel_MoveTool"/>
+
+<StringResource value="Rotate Tool" id="ID_RTEditor_ToolsPanel_RotateTool"/>
+
+<StringResource value="Scale Tool" id="ID_RTEditor_ToolsPanel_ScaleTool"/>
+
+<StringResource value="Rect Tool" id="ID_RTEditor_ToolsPanel_RectTool"/>
+
+<StringResource value="Tool handles are in global rotation." id="ID_RTEditor_ToolsPanel_InGlobalRotation"/>
+
+<StringResource value="Tool handles are in active object's rotation." id="ID_RTEditor_ToolsPanel_InObjectsRotation"/>
+
+<StringResource value="The tool handle is placed at the center of the selection." id="ID_RTEditor_ToolsPanel_AtTheCenter"/>
+
+<StringResource value="The tool handle is placed at the active object's pivot point." id="ID_RTEditor_ToolsPanel_AtThePivotPoint"/>
+
+<!-- Component Descriptors -->
+
+
+<StringResource value="Audio Listener" id="ID_RTEditor_CD_AudioListener"/>
+
+<StringResource value="Audio Source" id="ID_RTEditor_CD_AudioSource"/>
+
+<StringResource value="Play On Awake" id="ID_RTEditor_CD_AudioSource_PlayOnAwake"/>
+
+<StringResource value="Loop" id="ID_RTEditor_CD_AudioSource_Loop"/>
+
+<StringResource value="Clip" id="ID_RTEditor_CD_AudioSource_Clip"/>
+
+<StringResource value="Volume" id="ID_RTEditor_CD_AudioSource_Volume"/>
+
+<StringResource value="Box Collider" id="ID_RTEditor_CD_BoxCollider"/>
+
+<StringResource value="Is Trigger" id="ID_RTEditor_CD_BoxCollider_IsTrigger"/>
+
+<StringResource value="Material" id="ID_RTEditor_CD_BoxCollider_Material"/>
+
+<StringResource value="Center" id="ID_RTEditor_CD_BoxCollider_Center"/>
+
+<StringResource value="Size" id="ID_RTEditor_CD_BoxCollider_Size"/>
+
+<StringResource value="Camera" id="ID_RTEditor_CD_Camera"/>
+
+<StringResource value="Projection" id="ID_RTEditor_CD_Camera_Projection"/>
+
+<StringResource value="Field Of View" id="ID_RTEditor_CD_Camera_Fov"/>
+
+<StringResource value="Size" id="ID_RTEditor_CD_Camera_Size"/>
+
+<StringResource value="Culling Mask" id="ID_RTEditor_CD_Camera_CullingMask"/>
+
+<StringResource value="Capsule Collider" id="ID_RTEditor_CD_CapsuleCollider"/>
+
+<StringResource value="Is Trigger" id="ID_RTEditor_CD_CapsuleCollider_IsTrigger"/>
+
+<StringResource value="Material" id="ID_RTEditor_CD_CapsuleCollider_Material"/>
+
+<StringResource value="Center" id="ID_RTEditor_CD_CapsuleCollider_Center"/>
+
+<StringResource value="Radius" id="ID_RTEditor_CD_CapsuleCollider_Radius"/>
+
+<StringResource value="Height" id="ID_RTEditor_CD_CapsuleCollider_Height"/>
+
+<StringResource value="Direction" id="ID_RTEditor_CD_CapsuleCollider_Direction"/>
+
+<StringResource value="Fixed Joint" id="ID_RTEditor_CD_FixedJoint"/>
+
+<StringResource value="Connected Body" id="ID_RTEditor_CD_FixedJoint_ConnectedBody"/>
+
+<StringResource value="Break Force" id="ID_RTEditor_CD_FixedJoint_BreakForce"/>
+
+<StringResource value="Break Torque" id="ID_RTEditor_CD_FixedJoint_BreakTorque"/>
+
+<StringResource value="Enable Collision" id="ID_RTEditor_CD_FixedJoint_EnableCollision"/>
+
+<StringResource value="Enable Preprocessing" id="ID_RTEditor_CD_FixedJoint_EnablePerprocessing"/>
+
+<StringResource value="Hinge Joint" id="ID_RTEditor_CD_HingeJoint"/>
+
+<StringResource value="Connected Body" id="ID_RTEditor_CD_HingeJoint_ConnectedBody"/>
+
+<StringResource value="Anchor" id="ID_RTEditor_CD_HingeJoint_Anchor"/>
+
+<StringResource value="Axis" id="ID_RTEditor_CD_HingeJoint_Axis"/>
+
+<StringResource value="Auto Configure Connected Anchor" id="ID_RTEditor_CD_HingeJoint_AutoConfigure"/>
+
+<StringResource value="Connected Anchor" id="ID_RTEditor_CD_HingeJoint_ConnectedAnchor"/>
+
+<StringResource value="Use Spring" id="ID_RTEditor_CD_HingeJoint_UseSpring"/>
+
+<StringResource value="Spring" id="ID_RTEditor_CD_HingeJoint_Spring"/>
+
+<StringResource value="Use Motor" id="ID_RTEditor_CD_HingeJoint_UseMotor"/>
+
+<StringResource value="Motor" id="ID_RTEditor_CD_HingeJoint_Motor"/>
+
+<StringResource value="Use Limits" id="ID_RTEditor_CD_HingeJoint_UseLimits"/>
+
+<StringResource value="Limits" id="ID_RTEditor_CD_HingeJoint_Limits"/>
+
+<StringResource value="Min" id="ID_RTEditor_CD_HingeJoint_Min"/>
+
+<StringResource value="Max" id="ID_RTEditor_CD_HingeJoint_Max"/>
+
+<StringResource value="Bounciness" id="ID_RTEditor_CD_HingeJoint_Bounciness"/>
+
+<StringResource value="Bounce Min Velocity" id="ID_RTEditor_CD_HingeJoint_BounceMinVelocity"/>
+
+<StringResource value="Contact Distance" id="ID_RTEditor_CD_HingeJoint_ContactDistance"/>
+
+<StringResource value="Break Force" id="ID_RTEditor_CD_HingeJoint_BreakForce"/>
+
+<StringResource value="Break Torque" id="ID_RTEditor_CD_HingeJoint_BreakTorque"/>
+
+<StringResource value="Enable Collision" id="ID_RTEditor_CD_HingeJoint_BreakEnableCollision"/>
+
+<StringResource value="Enable Preprocessing" id="ID_RTEditor_CD_HingeJoint_BreakEnablePreprocessing"/>
+
+<StringResource value="Light" id="ID_RTEditor_CD_Light"/>
+
+<StringResource value="Enabled" id="ID_RTEditor_CD_Light_Enabled"/>
+
+<StringResource value="Type" id="ID_RTEditor_CD_Light_Type"/>
+
+<StringResource value="Range" id="ID_RTEditor_CD_Light_Range"/>
+
+<StringResource value="Spot Angle" id="ID_RTEditor_CD_Light_SpotAngle"/>
+
+<StringResource value="Color" id="ID_RTEditor_CD_Light_Color"/>
+
+<StringResource value="Intensity" id="ID_RTEditor_CD_Light_Intensity"/>
+
+<StringResource value="Bounce Intensity" id="ID_RTEditor_CD_Light_BounceIntensity"/>
+
+<StringResource value="Shadow Type" id="ID_RTEditor_CD_Light_ShadowType"/>
+
+<StringResource value="Strength" id="ID_RTEditor_CD_Light_Strength"/>
+
+<StringResource value="Resolution" id="ID_RTEditor_CD_Light_Resolution"/>
+
+<StringResource value="Bias" id="ID_RTEditor_CD_Light_Bias"/>
+
+<StringResource value="Normal Bias" id="ID_RTEditor_CD_Light_NormalBias"/>
+
+<StringResource value="Shadow Near Plane" id="ID_RTEditor_CD_Light_ShadowNearPlane"/>
+
+<StringResource value="Cookie" id="ID_RTEditor_CD_Light_Cookie"/>
+
+<StringResource value="Cookie Size" id="ID_RTEditor_CD_Light_CookieSize"/>
+
+<StringResource value="Flare" id="ID_RTEditor_CD_Light_Flare"/>
+
+<StringResource value="Render Mode" id="ID_RTEditor_CD_Light_RenderMode"/>
+
+<StringResource value="Mesh Collider" id="ID_RTEditor_CD_MeshCollider"/>
+
+<StringResource value="Convex" id="ID_RTEditor_CD_MeshCollider_Convex"/>
+
+<StringResource value="Is Trigger" id="ID_RTEditor_CD_MeshCollider_IsTrigger"/>
+
+<StringResource value="Material" id="ID_RTEditor_CD_MeshCollider_Material"/>
+
+<StringResource value="Mesh" id="ID_RTEditor_CD_MeshCollider_Mesh"/>
+
+<StringResource value="Mesh Filter" id="ID_RTEditor_CD_MeshFilter"/>
+
+<StringResource value="Mesh" id="ID_RTEditor_CD_MeshFilter_Mesh"/>
+
+<StringResource value="Mesh Renderer" id="ID_RTEditor_CD_MeshRenderer"/>
+
+<StringResource value="Cast Shadows" id="ID_RTEditor_CD_MeshRenderer_CastShadows"/>
+
+<StringResource value="Receive Shadows" id="ID_RTEditor_CD_MeshRenderer_ReceiveShadows"/>
+
+<StringResource value="Materials" id="ID_RTEditor_CD_MeshRenderer_Materials"/>
+
+<StringResource value="Light Probes" id="ID_RTEditor_CD_MeshRenderer_LightProbes"/>
+
+<StringResource value="Reflection Probes" id="ID_RTEditor_CD_MeshRenderer_ReflectionProbes"/>
+
+<StringResource value="Anchor Override" id="ID_RTEditor_CD_MeshRenderer_AnchorOverride"/>
+
+<StringResource value="Rect Transform" id="ID_RTEditor_CD_RectTransform"/>
+
+<StringResource value="Position" id="ID_RTEditor_CD_RectTransform_Position"/>
+
+<StringResource value="Pos X" id="ID_RTEditor_CD_RectTransform_PosX"/>
+
+<StringResource value="Pos Y" id="ID_RTEditor_CD_RectTransform_PosY"/>
+
+<StringResource value="Pos Z" id="ID_RTEditor_CD_RectTransform_PosZ"/>
+
+<StringResource value="Width" id="ID_RTEditor_CD_RectTransform_Width"/>
+
+<StringResource value="Height" id="ID_RTEditor_CD_RectTransform_Height"/>
+
+<StringResource value="Left" id="ID_RTEditor_CD_RectTransform_Left"/>
+
+<StringResource value="Right" id="ID_RTEditor_CD_RectTransform_Right"/>
+
+<StringResource value="Top" id="ID_RTEditor_CD_RectTransform_Top"/>
+
+<StringResource value="Bottom" id="ID_RTEditor_CD_RectTransform_Bottom"/>
+
+<StringResource value="Anchor Min" id="ID_RTEditor_CD_RectTransform_AnchorMin"/>
+
+<StringResource value="Anchor Max" id="ID_RTEditor_CD_RectTransform_AnchorMax"/>
+
+<StringResource value="Pivot" id="ID_RTEditor_CD_RectTransform_Pivot"/>
+
+<StringResource value="Rotation" id="ID_RTEditor_CD_RectTransform_Rotation"/>
+
+<StringResource value="Scale" id="ID_RTEditor_CD_RectTransform_Scale"/>
+
+<StringResource value="left" id="ID_RTEditor_AnchorPreset_Left"/>
+
+<StringResource value="center" id="ID_RTEditor_AnchorPreset_Center"/>
+
+<StringResource value="right" id="ID_RTEditor_AnchorPreset_Right"/>
+
+<StringResource value="top" id="ID_RTEditor_AnchorPreset_Top"/>
+
+<StringResource value="middle" id="ID_RTEditor_AnchorPreset_Middle"/>
+
+<StringResource value="bottom" id="ID_RTEditor_AnchorPreset_Bottom"/>
+
+<StringResource value="stretch" id="ID_RTEditor_AnchorPreset_Stretch"/>
+
+<StringResource value="custom" id="ID_RTEditor_AnchorPreset_Custom"/>
+
+<StringResource value="Anchor Presets" id="ID_RTEditor_AnchorPreset_AnchorPresets"/>
+
+<StringResource value="Shift: also set pivot" id="ID_RTEditor_AnchorPreset_SetPivot"/>
+
+<StringResource value="Alt: also set position" id="ID_RTEditor_AnchorPreset_SetPosition"/>
+
+<StringResource value="Rigidbody" id="ID_RTEditor_CD_Rigidbody"/>
+
+<StringResource value="Mass" id="ID_RTEditor_CD_Rigidbody_Mass"/>
+
+<StringResource value="Drag" id="ID_RTEditor_CD_Rigidbody_Drag"/>
+
+<StringResource value="Angular Drag" id="ID_RTEditor_CD_Rigidbody_AngularDrag"/>
+
+<StringResource value="Use Gravity" id="ID_RTEditor_CD_Rigidbody_UseGravity"/>
+
+<StringResource value="Is Kinematic" id="ID_RTEditor_CD_Rigidbody_IsKinematic"/>
+
+<StringResource value="Interpolation" id="ID_RTEditor_CD_Rigidbody_Interpolation"/>
+
+<StringResource value="Collision Detection" id="ID_RTEditor_CD_Rigidbody_CollisionDetection"/>
+
+<StringResource value="Runtime Animation" id="ID_RTEditor_CD_RuntimeAnimation"/>
+
+<StringResource value="Play On Awake" id="ID_RTEditor_CD_RuntimeAnimation_PlayOnAwake"/>
+
+<StringResource value="Loop" id="ID_RTEditor_CD_RuntimeAnimation_Loop"/>
+
+<StringResource value="Clips" id="ID_RTEditor_CD_RuntimeAnimation_Clips"/>
+
+<StringResource value="Skinned Mesh Renderer" id="ID_RTEditor_CD_SkinnedMeshRenderer"/>
+
+<StringResource value="Cast Shadows" id="ID_RTEditor_CD_SkinnedMeshRenderer_CastShadows"/>
+
+<StringResource value="Receive Shadows" id="ID_RTEditor_CD_SkinnedMeshRenderer_ReceiveShadows"/>
+
+<StringResource value="Materials" id="ID_RTEditor_CD_SkinnedMeshRenderer_Materials"/>
+
+<StringResource value="Light Probes" id="ID_RTEditor_CD_SkinnedMeshRenderer_LightProbes"/>
+
+<StringResource value="Reflection Probes" id="ID_RTEditor_CD_SkinnedMeshRenderer_ReflectionProbes"/>
+
+<StringResource value="AnchorOverride" id="ID_RTEditor_CD_SkinnedMeshRenderer_AnchorOverride"/>
+
+<StringResource value="Quality" id="ID_RTEditor_CD_SkinnedMeshRenderer_Quality"/>
+
+<StringResource value="Update When Offscreen" id="ID_RTEditor_CD_SkinnedMeshRenderer_UpdateWhenOffscreen"/>
+
+<StringResource value="Skinned Motion Vectors" id="ID_RTEditor_CD_SkinnedMeshRenderer_SkinnedMotionVectors"/>
+
+<StringResource value="Mesh" id="ID_RTEditor_CD_SkinnedMeshRenderer_Mesh"/>
+
+<StringResource value="Root Bone" id="ID_RTEditor_CD_SkinnedMeshRenderer_RootBone"/>
+
+<StringResource value="Bounds" id="ID_RTEditor_CD_SkinnedMeshRenderer_Bounds"/>
+
+<StringResource value="Sphere Collider" id="ID_RTEditor_CD_SphereCollider"/>
+
+<StringResource value="Is Trigger" id="ID_RTEditor_CD_SphereCollider_IsTrigger"/>
+
+<StringResource value="Material" id="ID_RTEditor_CD_SphereCollider_Material"/>
+
+<StringResource value="Center" id="ID_RTEditor_CD_SphereCollider_Center"/>
+
+<StringResource value="Radius" id="ID_RTEditor_CD_SphereCollider_Radius"/>
+
+<StringResource value="Spring Joint" id="ID_RTEditor_CD_SpringJoint"/>
+
+<StringResource value="ConnectedBody" id="ID_RTEditor_CD_SpringJoint_ConnectedBody"/>
+
+<StringResource value="Anchor" id="ID_RTEditor_CD_SpringJoint_Anchor"/>
+
+<StringResource value="Auto Configure Connected Anchor" id="ID_RTEditor_CD_SpringJoint_AutoConfigConnectedAnchor"/>
+
+<StringResource value="Connected Anchor" id="ID_RTEditor_CD_SpringJoint_ConnectAnchor"/>
+
+<StringResource value="Spring" id="ID_RTEditor_CD_SpringJoint_Spring"/>
+
+<StringResource value="Damper" id="ID_RTEditor_CD_SpringJoint_Damper"/>
+
+<StringResource value="MinDistance" id="ID_RTEditor_CD_SpringJoint_MinDistance"/>
+
+<StringResource value="MaxDistance" id="ID_RTEditor_CD_SpringJoint_MaxDistance"/>
+
+<StringResource value="Tolerance" id="ID_RTEditor_CD_SpringJoint_Tolerance"/>
+
+<StringResource value="Break Force" id="ID_RTEditor_CD_SpringJoint_BreakForce"/>
+
+<StringResource value="Break Torque" id="ID_RTEditor_CD_SpringJoint_BreakTorque"/>
+
+<StringResource value="Enable Collision" id="ID_RTEditor_CD_SpringJoint_EnableCollision"/>
+
+<StringResource value="Enable Preprocessing" id="ID_RTEditor_CD_SpringJoint_EnablePreprocessing"/>
+
+<StringResource value="Rendering Mode" id="ID_RTEditor_CD_StandardMaterial_RenderingMode"/>
+
+<StringResource value="Albedo" id="ID_RTEditor_CD_StandardMaterial_Albedo"/>
+
+<StringResource value="Albedo Color" id="ID_RTEditor_CD_StandardMaterial_AlbedoColor"/>
+
+<StringResource value="Alpha Cutoff" id="ID_RTEditor_CD_StandardMaterial_AlphaCutoff"/>
+
+<StringResource value="Metallic" id="ID_RTEditor_CD_StandardMaterial_Metallic"/>
+
+<StringResource value="Smoothness" id="ID_RTEditor_CD_StandardMaterial_Smoothness"/>
+
+<StringResource value="Normal Map" id="ID_RTEditor_CD_StandardMaterial_NormalMap"/>
+
+<StringResource value="Normal Map Scale" id="ID_RTEditor_CD_StandardMaterial_NormalMapScale"/>
+
+<StringResource value="Height Map" id="ID_RTEditor_CD_StandardMaterial_HeightMap"/>
+
+<StringResource value="Height Map Scale" id="ID_RTEditor_CD_StandardMaterial_HeightMapScale"/>
+
+<StringResource value="Occlusion Map" id="ID_RTEditor_CD_StandardMaterial_OcclusionMap"/>
+
+<StringResource value="Occlusion Strength" id="ID_RTEditor_CD_StandardMaterial_OcclusionStrength"/>
+
+<StringResource value="Emission Map" id="ID_RTEditor_CD_StandardMaterial_EmissionMap"/>
+
+<StringResource value="Emission Color" id="ID_RTEditor_CD_StandardMaterial_EmissionColor"/>
+
+<StringResource value="Detail Mask" id="ID_RTEditor_CD_StandardMaterial_DetailMask"/>
+
+<StringResource value="Detail Albedo Map" id="ID_RTEditor_CD_StandardMaterial_DetailAlbedoMap"/>
+
+<StringResource value="Detail Normal Map" id="ID_RTEditor_CD_StandardMaterial_DetailNormalMap"/>
+
+<StringResource value="Detail Scale" id="ID_RTEditor_CD_StandardMaterial_DetailScale"/>
+
+<StringResource value="Tiling" id="ID_RTEditor_CD_StandardMaterial_Tiling"/>
+
+<StringResource value="Offset" id="ID_RTEditor_CD_StandardMaterial_Offset"/>
+
+<StringResource value="Transform" id="ID_RTEditor_CD_Transform"/>
+
+<StringResource value="Position" id="ID_RTEditor_CD_Transform_Position"/>
+
+<StringResource value="Rotation" id="ID_RTEditor_CD_Transform_Rotation"/>
+
+<StringResource value="Scale" id="ID_RTEditor_CD_Transform_Scale"/>
+
+<StringResource value="Terrain" id="ID_RTEditor_CD_Terrain"/>
+
+<StringResource value="Text" id="ID_RTEditor_CD_Text"/>
+
+<StringResource value="Character" id="ID_RTEditor_CD_Text_Character"/>
+
+<StringResource value="Font" id="ID_RTEditor_CD_Text_Font"/>
+
+<StringResource value="Font Style" id="ID_RTEditor_CD_Text_FontStyle"/>
+
+<StringResource value="Font Size" id="ID_RTEditor_CD_Text_FontSize"/>
+
+<StringResource value="Line Spacing" id="ID_RTEditor_CD_Text_LineSpacing"/>
+
+<StringResource value="Rich Text" id="ID_RTEditor_CD_Text_RichText"/>
+
+<StringResource value="Paragaph" id="ID_RTEditor_CD_Text_Paragraph"/>
+
+<StringResource value="Alignment" id="ID_RTEditor_CD_Text_Alignment"/>
+
+<StringResource value="Align By Geometry" id="ID_RTEditor_CD_Text_AlignByGeometry"/>
+
+<StringResource value="Horizontal Overflow" id="ID_RTEditor_CD_Text_HorizontalOverflow"/>
+
+<StringResource value="Vertical Overflow" id="ID_RTEditor_CD_Text_VerticalOverflow"/>
+
+<StringResource value="Best Fit" id="ID_RTEditor_CD_Text_BestFit"/>
+
+<StringResource value="Rendering" id="ID_RTEditor_CD_Text_Rendering"/>
+
+<StringResource value="Color" id="ID_RTEditor_CD_Text_Color"/>
+
+<StringResource value="Material" id="ID_RTEditor_CD_Text_Material"/>
+
+<StringResource value="Text - Text Mesh Pro UGUI" id="ID_RTEditor_CD_TextTMP"/>
+
+<StringResource value="Text" id="ID_RTEditor_CD_TextTMP_Text"/>
+
+<StringResource value="Main Settings" id="ID_RTEditor_CD_TextTMP_MainSettings"/>
+
+<StringResource value="Font" id="ID_RTEditor_CD_TextTMP_Font"/>
+
+<StringResource value="Font Style" id="ID_RTEditor_CD_TextTMP_FontStyle"/>
+
+<StringResource value="Font Size" id="ID_RTEditor_CD_TextTMP_FontSize"/>
+
+<StringResource value="Color" id="ID_RTEditor_CD_TextTMP_Color"/>
+
+<StringResource value="Character Spacing" id="ID_RTEditor_CD_TextTMP_CharSpacing"/>
+
+<StringResource value="Word Spacing" id="ID_RTEditor_CD_TextTMP_WordSpacing"/>
+
+<StringResource value="Line Spacing" id="ID_RTEditor_CD_TextTMP_LineSpacing"/>
+
+<StringResource value="Paragaph Spacing" id="ID_RTEditor_CD_TextTMP_ParagraphSpacing"/>
+
+<StringResource value="Horizontal Alignment" id="ID_RTEditor_CD_TextTMP_HorizontalAlignment"/>
+
+<StringResource value="Vertical Alignment" id="ID_RTEditor_CD_TextTMP_VerticalAlignment"/>
+
+<StringResource value="Wrapping" id="ID_RTEditor_CD_TextTMP_EnableWordWrapping"/>
+
+<StringResource value="Overflow" id="ID_RTEditor_CD_TextTMP_Overflow"/>
+
+<StringResource value="Horizontal Mapping" id="ID_RTEditor_CD_TextTMP_HorizontalMapping"/>
+
+<StringResource value="Vertical Mapping" id="ID_RTEditor_CD_TextTMP_VerticalMapping"/>
+
+<StringResource value="Extra Settings" id="ID_RTEditor_CD_TextTMP_ExtraSettings"/>
+
+<StringResource value="Margins" id="ID_RTEditor_CD_TextTMP_Margins"/>
+
+<StringResource value="Is Scale Static" id="ID_RTEditor_CD_TextTMP_IsScaleStatic"/>
+
+<StringResource value="Rich Text" id="ID_RTEditor_CD_TextTMP_RichText"/>
+
+<StringResource value="Extra Padding" id="ID_RTEditor_CD_TextTMP_ExtraPadding"/>
+
+<StringResource value="Selectable" id="ID_RTEditor_CD_Selectable"/>
+
+<StringResource value="Interactable" id="ID_RTEditor_CD_Selectable_Interactable"/>
+
+<StringResource value="Target Graphic" id="ID_RTEditor_CD_Selectable_TargetGraphic"/>
+
+<StringResource value="Colors" id="ID_RTEditor_CD_Selectable_Colors"/>
+
+<StringResource value="Normal Color" id="ID_RTEditor_CD_Selectable_NormalColor"/>
+
+<StringResource value="Highlighted Color" id="ID_RTEditor_CD_Selectable_HighlightedColor"/>
+
+<StringResource value="Pressed Color" id="ID_RTEditor_CD_Selectable_PressedColor"/>
+
+<StringResource value="Selected Color" id="ID_RTEditor_CD_Selectable_SelectedColor"/>
+
+<StringResource value="Disabled Color" id="ID_RTEditor_CD_Selectable_DisabledColor"/>
+
+<StringResource value="Color Multiplier" id="ID_RTEditor_CD_Selectable_ColorMultiplier"/>
+
+<StringResource value="Fade Duration" id="ID_RTEditor_CD_Selectable_FadeDuration"/>
+
+<StringResource value="Navigation" id="ID_RTEditor_CD_Selectable_Navigation"/>
+
+<StringResource value="Mode" id="ID_RTEditor_CD_Selectable_Mode"/>
+
+<StringResource value="Select On Up" id="ID_RTEditor_CD_Selectable_SelectOnUp"/>
+
+<StringResource value="Select On Down" id="ID_RTEditor_CD_Selectable_SelectOnDown"/>
+
+<StringResource value="Select On Left" id="ID_RTEditor_CD_Selectable_SelectOnLeft"/>
+
+<StringResource value="Select On Right" id="ID_RTEditor_CD_Selectable_SelectOnRight"/>
+
+<StringResource value="Button" id="ID_RTEditor_CD_Button"/>
+
+<StringResource value="On Click()" id="ID_RTEditor_CD_OnClick"/>
+
+<StringResource value="Toggle" id="ID_RTEditor_CD_Toggle"/>
+
+<StringResource value="IsOn" id="ID_RTEditor_CD_Toggle_IsOn"/>
+
+<StringResource value="Toggle Transition" id="ID_RTEditor_CD_Toggle_ToggleTransition"/>
+
+<StringResource value="Graphic" id="ID_RTEditor_CD_Toggle_Graphic"/>
+
+<StringResource value="Group" id="ID_RTEditor_CD_Toggle_Group"/>
+
+<StringResource value="On Value Changed (Boolean)" id="ID_RTEditor_CD_Toggle_OnValueChanged"/>
+
+<StringResource value="Toggle Group" id="ID_RTEditor_CD_ToggleGroup"/>
+
+<StringResource value="Allow Switch Off" id="ID_RTEditor_CD_ToggleGroup_AllowSwitchOff"/>
+
+<StringResource value="Image" id="ID_RTEditor_CD_Image"/>
+
+<StringResource value="Source Image" id="ID_RTEditor_CD_Image_SourceImage"/>
+
+<StringResource value="Color" id="ID_RTEditor_CD_Image_Color"/>
+
+<StringResource value="Material" id="ID_RTEditor_CD_Image_Material"/>
+
+<StringResource value="Maskable" id="ID_RTEditor_CD_Image_Maskable"/>
+
+<StringResource value="Image Type" id="ID_RTEditor_CD_Image_ImageType"/>
+
+<StringResource value="Fill Center" id="ID_RTEditor_CD_Image_FillCenter"/>
+
+<StringResource value="Pixels Per Unit Multiplier" id="ID_RTEditor_CD_Image_PixelsPerUnitMultiplier"/>
+
+<StringResource value="Preserve Aspect" id="ID_RTEditor_CD_Image_PreserveAspect"/>
+
+<StringResource value="Set Native Size" id="ID_RTEditor_CD_Image_SetNativeSize"/>
+
+<StringResource value="Fill Method" id="ID_RTEditor_CD_Image_FillMethod"/>
+
+<StringResource value="Fill Origin" id="ID_RTEditor_CD_Image_FillOrigin"/>
+
+<StringResource value="Fill Amount" id="ID_RTEditor_CD_Image_FillAmount"/>
+
+<StringResource value="Fill Clockwise" id="ID_RTEditor_CD_Image_Clockwise"/>
+
+<StringResource value="Bottom" id="ID_RTEditor_CD_Image_Bottom"/>
+
+<StringResource value="Right" id="ID_RTEditor_CD_Image_Right"/>
+
+<StringResource value="Top" id="ID_RTEditor_CD_Image_Top"/>
+
+<StringResource value="Left" id="ID_RTEditor_CD_Image_Left"/>
+
+<StringResource value="Bottom Left" id="ID_RTEditor_CD_Image_BottomLeft"/>
+
+<StringResource value="Top Left" id="ID_RTEditor_CD_Image_TopLeft"/>
+
+<StringResource value="Top Right" id="ID_RTEditor_CD_Image_TopRight"/>
+
+<StringResource value="Bottom Right" id="ID_RTEditor_CD_Image_BottomRight"/>
+
+<StringResource value="Canvas" id="ID_RTEditor_CD_Canvas"/>
+
+<StringResource value="Camera" id="ID_RTEditor_CD_Canvas_Camera"/>
+
+<StringResource value="Layout Element" id="ID_RTEditor_CD_LayoutElement"/>
+
+<StringResource value="Ignore Layout" id="ID_RTEditor_CD_LayoutElement_IgnoreLayout"/>
+
+<StringResource value="Min Width" id="ID_RTEditor_CD_LayoutElement_MinWidth"/>
+
+<StringResource value="Min Height" id="ID_RTEditor_CD_LayoutElement_MinHeight"/>
+
+<StringResource value="Preferred Width" id="ID_RTEditor_CD_LayoutElement_PreferredWidth"/>
+
+<StringResource value="Preferred Height" id="ID_RTEditor_CD_LayoutElement_PreferredHeight"/>
+
+<StringResource value="Preferred Width" id="ID_RTEditor_CD_LayoutElement_FlexibleWidth"/>
+
+<StringResource value="Flexible Height" id="ID_RTEditor_CD_LayoutElement_FlexibleHeight"/>
+
+<StringResource value="Layout Priority" id="ID_RTEditor_CD_LayoutElement_LayoutPriority"/>
+
+<StringResource value="Padding" id="ID_RTEditor_CD_LayoutGroup_Padding"/>
+
+<StringResource value="Left" id="ID_RTEditor_CD_LayoutGroup_Padding_Left"/>
+
+<StringResource value="Right" id="ID_RTEditor_CD_LayoutGroup_Padding_Right"/>
+
+<StringResource value="Top" id="ID_RTEditor_CD_LayoutGroup_Padding_Top"/>
+
+<StringResource value="Bottom" id="ID_RTEditor_CD_LayoutGroup_Padding_Bottom"/>
+
+<StringResource value="Grid Layout Group" id="ID_RTEditor_CD_GridLayoutGroup"/>
+
+<StringResource value="Spacing" id="ID_RTEditor_CD_GridLayoutGroup_Spacing"/>
+
+<StringResource value="Cell Size" id="ID_RTEditor_CD_GridLayoutGroup_CellSize"/>
+
+<StringResource value="Start Corner" id="ID_RTEditor_CD_GridLayoutGroup_StartCorner"/>
+
+<StringResource value="Start Axis" id="ID_RTEditor_CD_GridLayoutGroup_StartAxis"/>
+
+<StringResource value="Child Alignment" id="ID_RTEditor_CD_GridLayoutGroup_ChildAlignment"/>
+
+<StringResource value="Constraint" id="ID_RTEditor_CD_GridLayoutGroup_Constraint"/>
+
+<StringResource value="Spacing" id="ID_RTEditor_CD_HVLayoutGroup_Spacing"/>
+
+<StringResource value="Child Alignment" id="ID_RTEditor_CD_HVLayoutGroup_ChildAlignment"/>
+
+<StringResource value="Reverse Arrangement" id="ID_RTEditor_CD_HVLayoutGroup_ReverseArrangement"/>
+
+<StringResource value="Control Child Width" id="ID_RTEditor_CD_HVLayoutGroup_ControlChildWidth"/>
+
+<StringResource value="Control Child Height" id="ID_RTEditor_CD_HVLayoutGroup_ControlChildHeight"/>
+
+<StringResource value="Use Child Scale X" id="ID_RTEditor_CD_HVLayoutGroup_UseChildScaleX"/>
+
+<StringResource value="Use Child Scale Y" id="ID_RTEditor_CD_HVLayoutGroup_UseChildScaleY"/>
+
+<StringResource value="Child Force Expand Width" id="ID_RTEditor_CD_HVLayoutGroup_ChildForceExpandWidth"/>
+
+<StringResource value="Child Force Expand Height" id="ID_RTEditor_CD_HVLayoutGroup_ChildForceExpandHeight"/>
+
+<StringResource value="Horizontal Layout Group" id="ID_RTEditor_CD_HorizontalLayoutGroup"/>
+
+<StringResource value="Vertical Layout Group" id="ID_RTEditor_CD_VerticalLayoutGroup"/>
+
+<!-- Image.Type Enum -->
+
+
+<StringResource value="Sliced" id="ID_UnityEngine.UI.Image+Type.Sliced"/>
+
+<StringResource value="Simple" id="ID_UnityEngine.UI.Image+Type.Simple"/>
+
+<StringResource value="Tiled" id="ID_UnityEngine.UI.Image+Type.Tiled"/>
+
+<StringResource value="Filled" id="ID_UnityEngine.UI.Image+Type.Filled"/>
+
+<!-- Image.FillMethod Enum -->
+
+
+<StringResource value="Horizontal" id="ID_UnityEngine.UI.Image+FillMethod.Horizontal"/>
+
+<StringResource value="Vertical" id="ID_UnityEngine.UI.Image+FillMethod.Vertical"/>
+
+<StringResource value="Radial 90" id="ID_UnityEngine.UI.Image+FillMethod.Radial90"/>
+
+<StringResource value="Radial 180" id="ID_UnityEngine.UI.Image+FillMethod.Radial180"/>
+
+<StringResource value="Radial 360" id="ID_UnityEngine.UI.Image+FillMethod.Radial360"/>
+
+<!-- Font Style Enum -->
+
+
+<StringResource value="Normal" id="ID_UnityEngine.FontStyle.Normal"/>
+
+<StringResource value="Bold" id="ID_UnityEngine.FontStyle.Bold"/>
+
+<StringResource value="Italic" id="ID_UnityEngine.FontStyle.Italic"/>
+
+<StringResource value="Bold And Italic" id="ID_UnityEngine.FontStyle.BoldAndItalic"/>
+
+<!-- Text Anchor Enum -->
+
+
+<StringResource value="Upper Left" id="ID_UnityEngine.TextAnchor.UpperLeft"/>
+
+<StringResource value="Upper Center" id="ID_UnityEngine.TextAnchor.UpperCenter"/>
+
+<StringResource value="Upper Right" id="ID_UnityEngine.TextAnchor.UpperRight"/>
+
+<StringResource value="Middle Left" id="ID_UnityEngine.TextAnchor.MiddleLeft"/>
+
+<StringResource value="Middle Center" id="ID_UnityEngine.TextAnchor.MiddleCenter"/>
+
+<StringResource value="Middle Right" id="ID_UnityEngine.TextAnchor.MiddleRight"/>
+
+<StringResource value="Lower Left" id="ID_UnityEngine.TextAnchor.LowerLeft"/>
+
+<StringResource value="Lower Center" id="ID_UnityEngine.TextAnchor.LowerCenter"/>
+
+<StringResource value="Lower Right" id="ID_UnityEngine.TextAnchor.LowerRight"/>
+
+<!-- Horizontal Wrap Mode Enum -->
+
+
+<StringResource value="Wrap" id="ID_UnityEngine.HorizontalWrapMode.Wrap"/>
+
+<StringResource value="Overflow" id="ID_UnityEngine.HorizontalWrapMode.Overflow"/>
+
+<!-- Vertical Wrap Mode Enum -->
+
+
+<StringResource value="Overflow" id="ID_UnityEngine.VerticalWrapMode.Overflow"/>
+
+<StringResource value="Truncate" id="ID_UnityEngine.VerticalWrapMode.Truncate"/>
+
+<!-- TMPro.FontStyles -->
+
+
+<StringResource value="Normal" id="ID_TMPro.FontStyle.Normal"/>
+
+<StringResource value="Bold" id="ID_TMPro.FontStyle.Bold"/>
+
+<StringResource value="Italic" id="ID_TMPro.FontStyle.Italic"/>
+
+<StringResource value="Underline" id="ID_TMPro.FontStyle.Underline"/>
+
+<StringResource value="LowerCase" id="ID_TMPro.FontStyle.LowerCase"/>
+
+<StringResource value="UpperCase" id="ID_TMPro.FontStyle.UpperCase"/>
+
+<StringResource value="SmallCaps" id="ID_TMPro.FontStyle.SmallCaps"/>
+
+<StringResource value="Strikethrough" id="ID_TMPro.FontStyle.Strikethrough"/>
+
+<StringResource value="Superscript" id="ID_TMPro.FontStyle.Superscript"/>
+
+<StringResource value="Subscript" id="ID_TMPro.FontStyle.Subscript"/>
+
+<StringResource value="Highlight" id="ID_TMPro.FontStyle.Highlight"/>
+
+<!-- TMPro.HorizontalAlignmentOptions -->
+
+
+<StringResource value="Left" id="ID_TMPro.HorizontalAlignmentOptions.Left"/>
+
+<StringResource value="Center" id="ID_TMPro.HorizontalAlignmentOptions.Center"/>
+
+<StringResource value="Right" id="ID_TMPro.HorizontalAlignmentOptions.Right"/>
+
+<StringResource value="Justified" id="ID_TMPro.HorizontalAlignmentOptions.Justified"/>
+
+<StringResource value="Flush" id="ID_TMPro.HorizontalAlignmentOptions.Flush"/>
+
+<StringResource value="Geometry" id="ID_TMPro.HorizontalAlignmentOptions.Geometry"/>
+
+<!-- TMPro.VerticalAlignmentOptions -->
+
+
+<StringResource value="Top" id="ID_TMPro.VerticalAlignmentOptions.Top"/>
+
+<StringResource value="Middle" id="ID_TMPro.VerticalAlignmentOptions.Middle"/>
+
+<StringResource value="Bottom" id="ID_TMPro.VerticalAlignmentOptions.Bottom"/>
+
+<StringResource value="Baseline" id="ID_TMPro.VerticalAlignmentOptions.Baseline"/>
+
+<StringResource value="Geometry" id="ID_TMPro.VerticalAlignmentOptions.Geometry"/>
+
+<StringResource value="Capline" id="ID_TMPro.VerticalAlignmentOptions.Capline"/>
+
+<!-- TMPro.TextOverflowModes -->
+
+
+<StringResource value="Overflow" id="ID_TMPro.TextOverflowModes.Overflow"/>
+
+<StringResource value="Ellipsis" id="ID_TMPro.TextOverflowModes.Ellipsis"/>
+
+<StringResource value="Masking" id="ID_TMPro.TextOverflowModes.Masking"/>
+
+<StringResource value="Truncate" id="ID_TMPro.TextOverflowModes.Truncate"/>
+
+<StringResource value="Scroll Rect" id="ID_TMPro.TextOverflowModes.ScrollRect"/>
+
+<StringResource value="Page" id="ID_TMPro.TextOverflowModes.Page"/>
+
+<StringResource value="Linked" id="ID_TMPro.TextOverflowModes.Linked"/>
+
+<!-- TMPro.TextureMappingOptions -->
+
+
+<StringResource value="Character" id="ID_TMPro.TextureMappingOptions.Character"/>
+
+<StringResource value="Line" id="ID_TMPro.TextureMappingOptions.Line"/>
+
+<StringResource value="Paragaph" id="ID_TMPro.TextureMappingOptions.Paragaph"/>
+
+<StringResource value="Match Aspect" id="ID_TMPro.TextureMappingOptions.MatchAspect"/>
+
+<!-- TMPro.TextAlignmentOptions -->
+
+
+<StringResource value="Top Left" id="ID_TMPro.TextAlignmentOptions.TopLeft"/>
+
+<StringResource value="Top" id="ID_TMPro.TextAlignmentOptions.Top"/>
+
+<StringResource value="Top Right" id="ID_TMPro.TextAlignmentOptions.TopRight"/>
+
+<StringResource value="Top Justified" id="ID_TMPro.TextAlignmentOptions.TopJustified"/>
+
+<StringResource value="Top Flush" id="ID_TMPro.TextAlignmentOptions.TopFlush"/>
+
+<StringResource value="Top Geo Aligned" id="ID_TMPro.TextAlignmentOptions.TopGeoAligned"/>
+
+<StringResource value="Left" id="ID_TMPro.TextAlignmentOptions.Left"/>
+
+<StringResource value="Center" id="ID_TMPro.TextAlignmentOptions.Center"/>
+
+<StringResource value="Right" id="ID_TMPro.TextAlignmentOptions.Right"/>
+
+<StringResource value="Justified" id="ID_TMPro.TextAlignmentOptions.Justified"/>
+
+<StringResource value="Flush" id="ID_TMPro.TextAlignmentOptions.Flush"/>
+
+<StringResource value="Center Geo Aligned" id="ID_TMPro.TextAlignmentOptions.CenterGeoAligned"/>
+
+<StringResource value="Bottom Left" id="ID_TMPro.TextAlignmentOptions.BottomLeft"/>
+
+<StringResource value="Bottom" id="ID_TMPro.TextAlignmentOptions.Bottom"/>
+
+<StringResource value="Bottom Right" id="ID_TMPro.TextAlignmentOptions.BottomRight"/>
+
+<StringResource value="Bottom Justified" id="ID_TMPro.TextAlignmentOptions.BottomJustified"/>
+
+<StringResource value="Bottom Flush" id="ID_TMPro.TextAlignmentOptions.BottomFlush"/>
+
+<StringResource value="Bottom Geo Aligned" id="ID_TMPro.TextAlignmentOptions.BottomGeoAligned"/>
+
+<StringResource value="Baseline Left" id="ID_TMPro.TextAlignmentOptions.BaselineLeft"/>
+
+<StringResource value="Baseline" id="ID_TMPro.TextAlignmentOptions.Baseline"/>
+
+<StringResource value="Baseline Right" id="ID_TMPro.TextAlignmentOptions.BaselineRight"/>
+
+<StringResource value="Baseline Justified" id="ID_TMPro.TextAlignmentOptions.BaselineJustified"/>
+
+<StringResource value="Baseline Flush" id="ID_TMPro.TextAlignmentOptions.BaselineFlush"/>
+
+<StringResource value="Baseline Geo Aligned" id="ID_TMPro.TextAlignmentOptions.BaselineGeoAligned"/>
+
+<StringResource value="Midline Left" id="ID_TMPro.TextAlignmentOptions.MidlineLeft"/>
+
+<StringResource value="Midline" id="ID_TMPro.TextAlignmentOptions.Midline"/>
+
+<StringResource value="Midline Right" id="ID_TMPro.TextAlignmentOptions.MidlineRight"/>
+
+<StringResource value="Midline Justified" id="ID_TMPro.TextAlignmentOptions.MidlineJustified"/>
+
+<StringResource value="Midline Flush" id="ID_TMPro.TextAlignmentOptions.MidlineFlush"/>
+
+<StringResource value="Midline Geo Aligned" id="ID_TMPro.TextAlignmentOptions.MidlineGeoAligned"/>
+
+<StringResource value="Capline Left" id="ID_TMPro.TextAlignmentOptions.CaplineLeft"/>
+
+<StringResource value="Capline" id="ID_TMPro.TextAlignmentOptions.Capline"/>
+
+<StringResource value="Capline Right" id="ID_TMPro.TextAlignmentOptions.CaplineRight"/>
+
+<StringResource value="Capline Justified" id="ID_TMPro.TextAlignmentOptions.CaplineJustified"/>
+
+<StringResource value="Capline Flush" id="ID_TMPro.TextAlignmentOptions.CaplineFlush"/>
+
+<StringResource value="Capline Geo Aligned" id="ID_TMPro.TextAlignmentOptions.CaplineGeoAligned"/>
+
+<StringResource value="Converted" id="ID_TMPro.TextAlignmentOptions.Converted"/>
+
+<!-- GameObject Editor-->
+
+
+<StringResource value="Layer" id="ID_RTEditor_GOE_Layer"/>
+
+<!-- Property Editors -->
+
+
+<StringResource value="Size" id="ID_RTEditor_PE_ArrayEditor_Size"/>
+
+<StringResource value="None" id="ID_RTEditor_PE_ObjectEditor_None"/>
+
+<StringResource value="Select" id="ID_RTEditor_PE_ObjectEditor_Select"/>
+
+<StringResource value="Select" id="ID_RTEditor_PE_ColorEditor_Select"/>
+
+<StringResource value="No Function" id="ID_RTEditor_PE_PersistentCallEditor_NoFunction"/>
+
+<!-- add other TypeNames here if required -->
+
+
+<StringResource value="Material" id="ID_RTEditor_PE_TypeName_Material"/>
+
+<StringResource value="Mesh" id="ID_RTEditor_PE_TypeName_Mesh"/>
+
+<StringResource value="Object" id="ID_RTEditor_PE_TypeName_Object"/>
+
+<StringResource value="GameObject" id="ID_RTEditor_PE_TypeName_GameObject"/>
+
+<StringResource value="Component" id="ID_RTEditor_PE_TypeName_Component"/>
+
+<StringResource value="Color" id="ID_RTEditor_PE_TypeName_Color"/>
+
+<StringResource value="Center" id="ID_RTEditor_PE_BoundsEditor_Center"/>
+
+<StringResource value="Extents" id="ID_RTEditor_PE_BoundsEditor_Extents"/>
+
+<!-- AddComponentControl -->
+
+
+<StringResource value="Add Component" id="ID_RTEditor_AddComponentControl_AddComponent"/>
+
+<!-- Project Folder View -->
+
+
+<StringResource value="Delete Selected Assets" id="ID_RTEditor_ProjectFolderView_DeleteSelectedAssets"/>
+
+<StringResource value="You cannot undo this action" id="ID_RTEditor_ProjectFolderView_YouCanNotUndoThisAction"/>
+
+<StringResource value="Folder" id="ID_RTEditor_ProjectFolderView_Folder"/>
+
+<StringResource value="Create" id="ID_RTEditor_ProjectFolderView_Create"/>
+
+<StringResource value="Material" id="ID_RTEditor_ProjectFolderView_Material"/>
+
+<StringResource value="Animation Clip" id="ID_RTEditor_ProjectFolderView_AnimationClip"/>
+
+<StringResource value="Open" id="ID_RTEditor_ProjectFolderView_Open"/>
+
+<StringResource value="Duplicate" id="ID_RTEditor_ProjectFolderView_Duplicate"/>
+
+<StringResource value="Delete" id="ID_RTEditor_ProjectFolderView_Delete"/>
+
+<StringResource value="Rename" id="ID_RTEditor_ProjectFolderView_Rename"/>
+
+<StringResource value="Delete" id="ID_RTEditor_ProjectFolderView_BtnDelete"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_ProjectFolderView_BtnCancel"/>
+
+<!-- Project Tree View -->
+
+
+<StringResource value="Create Folder" id="ID_RTEditor_ProjectTreeView_CreateFolder"/>
+
+<StringResource value="Delete" id="ID_RTEditor_ProjectTreeView_Delete"/>
+
+<StringResource value="Duplicate" id="ID_RTEditor_ProjectTreeView_Duplicate"/>
+
+<StringResource value="Rename" id="ID_RTEditor_ProjectTreeView_Rename"/>
+
+<StringResource value="Folder" id="ID_RTEditor_ProjectTreeView_Folder"/>
+
+<StringResource value="Unable to remove" id="ID_RTEditor_ProjectTreeView_UnableToRemove"/>
+
+<StringResource value="Unable to remove root folder" id="ID_RTEditor_ProjectTreeView_UnableToRemoveRootFolder"/>
+
+<StringResource value="Delete selected assets" id="ID_RTEditor_ProjectTreeView_DeleteSelectedAssets"/>
+
+<StringResource value="You cannot undo this action" id="ID_RTEditor_ProjectTreeView_YouCannotUndoThisAction"/>
+
+<StringResource value="Delete" id="ID_RTEditor_ProjectTreeView_Btn_Delete"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_ProjectTreeView_Btn_Cancel"/>
+
+<!-- Project View -->
+
+
+<StringResource value="Can't open project" id="ID_RTEditor_ProjectView_CantOpenProject"/>
+
+<StringResource value="Can't close project" id="ID_RTEditor_ProjectView_CantCloseProject"/>
+
+<StringResource value="Unable to import assets" id="ID_RTEditor_ProjectView_UnableToImportAssets"/>
+
+<StringResource value="Unable to remove" id="ID_RTEditor_ProjectView_UnableToRemove"/>
+
+<StringResource value="Unable to rename asset" id="ID_RTEditor_ProjectView_UnableToRenameAsset"/>
+
+<StringResource value="Unable to create folder" id="ID_RTEditor_ProjectView_UnableToCreateFolder"/>
+
+<StringResource value="Unable to move assets" id="ID_RTEditor_ProjectView_UnableToMoveAssets"/>
+
+<StringResource value="Can't get assets" id="ID_RTEditor_ProjectView_CantGetAssets"/>
+
+<StringResource value="Unable to load scene" id="ID_RTEditor_ProjectView_UnableToLoadScene"/>
+
+<!-- Console View -->
+
+
+<StringResource value="Clear" id="ID_RTEditor_ConsoleView_Btn_Clear"/>
+
+<!-- HierarchyView / HierarchyViewModel -->
+
+
+<StringResource value="Unable to load asset items" id="ID_RTEditor_HierarchyView_UnableToLoadAssetItems"/>
+
+<StringResource value="Duplicate" id="ID_RTEditor_HierarchyViewImpl_Duplicate"/>
+
+<StringResource value="Delete" id="ID_RTEditor_HierarchyViewImpl_Delete"/>
+
+<StringResource value="Rename" id="ID_RTEditor_HierarchyViewImpl_Rename"/>
+
+<StringResource value="Grouping/Group" id="ID_RTEditor_HierarchyViewModel_Group"/>
+
+<StringResource value="Grouping/Group (Local)" id="ID_RTEditor_HierarchyViewModel_GroupLocal"/>
+
+<StringResource value="Grouping/Ungroup" id="ID_RTEditor_HierarchyViewModel_Ungroup"/>
+
+<StringResource value="Enter Group Name" id="ID_RTEditor_HierarchyViewModel_EnterGroupName"/>
+
+<StringResource value="Group" id="ID_RTEditor_HierarchyViewModel_DefaultGroupName"/>
+
+<!-- SaveSceneDialog -->
+
+
+<StringResource value="Save" id="ID_RTEditor_SaveSceneDialog_Save"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_SaveSceneDialog_Cancel"/>
+
+<StringResource value="Unable to save scene" id="ID_RTEditor_SaveSceneDialog_UnableToSaveScene"/>
+
+<StringResource value="Unable to save scene in play mode" id="ID_RTEditor_SaveSceneDialog_UnableToSaveScenePlayMode"/>
+
+<StringResource value="Scene name is invalid" id="ID_RTEditor_SaveSceneDialog_SceneNameIsInvalid"/>
+
+<StringResource value="Scene name should start with letter" id="ID_RTEditor_SaveSceneDialog_SceneNameShouldStartWith"/>
+
+<StringResource value="Scene name contains invalid characters" id="ID_RTEditor_SaveSceneDialog_SceneNameInvalidCharacters"/>
+
+<StringResource value="Scene with same name already exits" id="ID_RTEditor_SaveSceneDialog_SceneWithSameNameExists"/>
+
+<StringResource value="Do you want to overwrite it?" id="ID_RTEditor_SaveSceneDialog_DoYouWantToOverwriteIt"/>
+
+<StringResource value="Yes" id="ID_RTEditor_SaveSceneDialog_Yes"/>
+
+<StringResource value="No" id="ID_RTEditor_SaveSceneDialog_No"/>
+
+<!-- AssetLibrarySelectDialog -->
+
+
+<StringResource value="Built-in" id="ID_RTEditor_AssetLibSelectDialog_BuiltIn"/>
+
+<StringResource value="External" id="ID_RTEditor_AssetLibSelectDialog_External"/>
+
+<StringResource value="Select" id="ID_RTEditor_AssetLibSelectDialog_Select"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_AssetLibSelectDialog_Cancel"/>
+
+<StringResource value="Unable to list asset bundles" id="ID_RTEditor_AssetLibSelectDialog_UnableToListBundles"/>
+
+<StringResource value="OK" id="ID_RTEditor_AssetLibSelectDialog_OK"/>
+
+<!-- AssetLibraryImportDialog -->
+
+
+<StringResource value="Import" id="ID_RTEditor_AssetLibImportDialog_Btn_Import"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_AssetLibImportDialog_Btn_Cancel"/>
+
+<StringResource value="Unable to load AssetLibrary" id="ID_RTEditor_AssetLibImportDialog_UnableToLoadAssetLibrary"/>
+
+<!-- ImportFileDialog -->
+
+
+<StringResource value="Open" id="ID_RTEditor_ImportFileDialog_Btn_Open"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_ImportFileDialog_Btn_Cancel"/>
+
+<StringResource value="Import" id="ID_RTEditor_ImportFileDialog_Btn_Import"/>
+
+<!-- SaveFileDialog -->
+
+
+<StringResource value="Open" id="ID_RTEditor_SaveFileDialog_Btn_Open"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_SaveFileDialog_Btn_Cancel"/>
+
+<StringResource value="Save" id="ID_RTEditor_SaveFileDialog_Btn_Save"/>
+
+<StringResource value="Save As Confirmation" id="ID_RTEditor_SaveFileDialog_SaveAsConfirmationHeader"/>
+
+<StringResource value="File with the same name already exist. Do you want to overwrite it?" id="ID_RTEditor_SaveFileDialog_SaveAsConfirmation"/>
+
+<!-- OpenFileDialog -->
+
+
+<StringResource value="Open" id="ID_RTEditor_OpenFileDialog_Btn_Open"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_OpenFileDialog_Btn_Cancel"/>
+
+<!-- ProjectsDialog -->
+
+
+<StringResource value="Create" id="ID_RTEditor_ProjectsDialog_Btn_Create"/>
+
+<StringResource value="Delete" id="ID_RTEditor_ProjectsDialog_Btn_Delete"/>
+
+<StringResource value="Open" id="ID_RTEditor_ProjectsDialog_Btn_Open"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_ProjectsDialog_Btn_Cancel"/>
+
+<StringResource value="Create Project" id="ID_RTEditor_ProjectsDialog_CreateProject"/>
+
+<StringResource value="Unable to create project" id="ID_RTEditor_ProjectsDialog_UnableToCreateProject"/>
+
+<StringResource value="Project with the same name already exists" id="ID_RTEditor_ProjectsDialog_ProjectWithSameNameExists"/>
+
+<StringResource value="Delete Project" id="ID_RTEditor_ProjectsDialog_DeleteProject"/>
+
+<StringResource value="Delete {0} project?" id="ID_RTEditor_ProjectsDialog_AreYouSureDeleteProject"/>
+
+<StringResource value="Unable to get projects" id="ID_RTEditor_ProjectsDialog_UnableToGetProjects"/>
+
+<StringResource value="Unable to open project" id="ID_RTEditor_ProjectsDialog_UnableToOpenProject"/>
+
+<!-- SaveAssetsDialog -->
+
+
+<StringResource value="Save" id="ID_RTEditor_SaveAssetsDialog_Save"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_SaveAssetsDialog_Cancel"/>
+
+<StringResource value="Unable to save asset" id="ID_RTEditor_SaveAssetsDialog_UnableToSaveAsset"/>
+
+<StringResource value="Unable to save asset in play mode" id="ID_RTEditor_SaveAssetsDialog_UnableToSaveAssetInPlayMode"/>
+
+<StringResource value="Asset name is invalid" id="ID_RTEditor_SaveAssetsDialog_AssetNameIsInvalid"/>
+
+<StringResource value="Asset name should start with letter" id="ID_RTEditor_SaveAssetsDialog_AssetNameShouldStartWith"/>
+
+<StringResource value="Asset name contains invalid characters" id="ID_RTEditor_SaveAssetsDialog_AssetNameInvalidCharacters"/>
+
+<StringResource value="Asset with same name already exits" id="ID_RTEditor_SaveAssetsDialog_AssetWithSameNameExists"/>
+
+<StringResource value="Do you want to overwrite it?" id="ID_RTEditor_SaveAssetsDialog_DoYouWantToOverwriteIt"/>
+
+<StringResource value="Unable to delete asset" id="ID_RTEditor_SaveAssetsDialog_UnableToDeleteAsset"/>
+
+<StringResource value="Yes" id="ID_RTEditor_SaveAssetsDialog_Yes"/>
+
+<StringResource value="No" id="ID_RTEditor_SaveAssetsDialog_No"/>
+
+<!-- SelectColorDialog -->
+
+
+<StringResource value="Select" id="ID_RTEditor_SelectColorDialog_Select"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_SelectColorDialog_Cancel"/>
+
+<!-- SelectObjectDialog -->
+
+
+<StringResource value="Search..." id="ID_RTEditor_SelectObjectDialog_Search"/>
+
+<StringResource value="Assets" id="ID_RTEditor_SelectObjectDialog_Assets"/>
+
+<StringResource value="Scene" id="ID_RTEditor_SelectObjectDialog_Scene"/>
+
+<StringResource value="Select" id="ID_RTEditor_SelectObjectDialog_Select"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_SelectObjectDialog_Cancel"/>
+
+<StringResource value="Can't GetAssets" id="ID_RTEditor_SelectObjectDialog_CantGetAssets"/>
+
+<StringResource value="None" id="ID_RTEditor_SelectObjectDialog_None"/>
+
+<!-- SettingsDialog -->
+
+
+<StringResource value="Reset" id="ID_RTEditor_SettingsDialog_Reset"/>
+
+<StringResource value="Close" id="ID_RTEditor_SettingsDialog_Close"/>
+
+<StringResource value="Is Grid Visible" id="ID_RTEditor_SettingsDialog_IsGridVisible"/>
+
+<StringResource value="Grid Z Test" id="ID_RTEditor_SettingsDialog_GridZTest"/>
+
+<StringResource value="Grid Opacity" id="ID_RTEditor_SettingsDialog_GridOpacity"/>
+
+<StringResource value="Snap To Grid" id="ID_RTEditor_SettingsDialog_SnapToGrid"/>
+
+<StringResource value="Grid Size" id="ID_RTEditor_SettingsDialog_GridSize"/>
+
+<StringResource value="UI Auto Scale" id="ID_RTEditor_SettingsDialog_UIAutoScale"/>
+
+<StringResource value="UI Scale" id="ID_RTEditor_SettingsDialog_UIScale"/>
+
+<StringResource value="Movement Smooth Speed" id="ID_RTEditor_SettingsDialog_FreeMovementSmoothSpeed"/>
+
+<StringResource value="Rotation Smooth Speed" id="ID_RTEditor_SettingsDialog_FreeRotationSmoothSpeed"/>
+
+<StringResource value="Rotation Invert X" id="ID_RTEditor_SettingsDialog_RotationInvertX"/>
+
+<StringResource value="Rotation Invert Y" id="ID_RTEditor_SettingsDialog_RotationInvertY"/>
+
+<StringResource value="Zoom Speed" id="ID_RTEditor_SettingsDialog_ZoomSpeed"/>
+
+<StringResource value="Constant Zoom Speed" id="ID_RTEditor_SettingsDialog_ConstantZoomSpeed"/>
+
+<StringResource value="UI Settings" id="ID_RTEditor_SettingsDialog_UISettings"/>
+
+<StringResource value="Scene Settings" id="ID_RTEditor_SettingsDialog_SceneSettings"/>
+
+<StringResource value="Scene Navigation Settings" id="ID_RTEditor_SettingsDialog_SceneNavigationSettings"/>
+
+<StringResource value="System Of Measurement" id="ID_RTEditor_SettingsDialog_SystemOfMeasurement"/>
+
+<StringResource value="Measurement Settings" id="ID_RTEditor_SettingsDialog_MeasurementSettings"/>
+
+<StringResource value="Graphics Settings" id="ID_RTEditor_SettingsDialog_GraphicsSettings"/>
+
+<StringResource value="Quality" id="ID_RTEditor_SettingsDialog_GraphicsQuality"/>
+
+<StringResource value="Default Light Settings" id="ID_RTEditor_SettingsDialog_DefaultLightSettings"/>
+
+<StringResource value="Color" id="ID_RTEditor_SettingsDialog_LightColor"/>
+
+<StringResource value="Intensity" id="ID_RTEditor_SettingsDialog_LightIntensity"/>
+
+<StringResource value="Shadow Type" id="ID_RTEditor_SettingsDialog_ShadowType"/>
+
+<StringResource value="Shadow Strength" id="ID_RTEditor_SettingsDialog_ShadowStrenth"/>
+
+<StringResource value="Themes" id="ID_RTEditor_SettingsDialog_Themes"/>
+
+<StringResource value="Selected Theme" id="ID_RTEditor_SettingsDialog_SelectedTheme"/>
+
+<StringResource value="Default" id="ID_RTEditor_SettingsDialog_Default"/>
+
+<!-- RuntimeEditor -->
+
+
+<StringResource value="Create" id="ID_RTEditor_Create"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_Cancel"/>
+
+<StringResource value="Create New Scene" id="ID_RTEditor_CreateNewScene"/>
+
+<StringResource value="Do you want to create new scene?" id="ID_RTEditor_DoYouWantCreateNewScene"/>
+
+<StringResource value="All unsaved changes will be lost" id="ID_RTEditor_UnsavedChangesWillBeLost"/>
+
+<StringResource value="Unable to save scene" id="ID_RTEditor_UnableToSaveScene"/>
+
+<StringResource value="Unable to save scene in play mode" id="ID_RTEditor_UnableToSaveSceneInPlayMode"/>
+
+<StringResource value="Create Prefab" id="ID_RTEditor_CreatePrefab"/>
+
+<StringResource value="Include dependencies?" id="ID_RTEditor_IncludeDependencies"/>
+
+<StringResource value="Yes" id="ID_RTEditor_Yes"/>
+
+<StringResource value="No" id="ID_RTEditor_No"/>
+
+<StringResource value="Unable to create prefab" id="ID_RTEditor_UnableToCreatePrefab"/>
+
+<StringResource value="Unable to save asset" id="ID_RTEditor_UnableToSaveAsset"/>
+
+<StringResource value="Unable to delete folders" id="ID_RTEditor_UnableToDeleteFolders"/>
+
+<StringResource value="Unable to load assets" id="ID_RTEditor_UnableToLoadAssets"/>
+
+<StringResource value="Directional Light" id="ID_RTEditor_DirectionalLight"/>
+
+<StringResource value="Camera" id="ID_RTEditor_Camera"/>
+
+<!-- AnimationView -->
+
+
+<StringResource value="Preview" id="ID_RTEditor_AnimationView_Preview"/>
+
+<StringResource value=" Samples" id="ID_RTEditor_AnimationView_Samples"/>
+
+<StringResource value="Dopesheet" id="ID_RTEditor_AnimationView_Dopesheet"/>
+
+<StringResource value="Add Property" id="ID_RTEditor_AnimationView_Btn_AddProperty"/>
+
+<StringResource value="Save Animation Clip" id="ID_RTEditor_AnimationView_SaveAnimationClip"/>
+
+<StringResource value="New Animation Clip" id="ID_RTEditor_AnimationView_NewAnimationClip"/>
+
+<StringResource value="To begin animating {0}, create a RuntimeAnimation and a RuntimeAnimation Clip" id="ID_RTEditor_AnimationView_Condition2"/>
+
+<StringResource value="To begin animating {0}, create a RuntimeAnimation Clip" id="ID_RTEditor_AnimationView_Condition1"/>
+
+<!--Mobile-->
+
+
+<!-- TODO: Rename _Peek_ To _Mobile_ -->
+
+
+<StringResource value="Pin" id="ID_RTEditor_Peek_Pin"/>
+
+<StringResource value="Hierarchy" id="ID_RTEditor_Peek_Hierarchy"/>
+
+<StringResource value="Inspector" id="ID_RTEditor_Peek_Inspector"/>
+
+<StringResource value="Project" id="ID_RTEditor_Peek_Project"/>
+
+<StringResource value="Game" id="ID_RTEditor_Peek_Game"/>
+
+<StringResource value="Animation" id="ID_RTEditor_Peek_Animation"/>
+
+<StringResource value="Console" id="ID_RTEditor_Peek_Console"/>
+
+<StringResource value="Create Prefab" id="ID_RTEditor_Peek_CreatePrefab"/>
+
+<StringResource value="Create Group" id="ID_RTEditor_Peek_CreateGroup"/>
+
+<StringResource value="Create Group (Local)" id="ID_RTEditor_Peek_CreateGroupLocal"/>
+
+<StringResource value="Ungroup" id="ID_RTEditor_Peek_Ungroup"/>
+
+<StringResource value="Enter Group Name" id="ID_RTEditor_Peek_EnterGroupName"/>
+
+<StringResource value="Group" id="ID_RTEditor_Peek_DefaultGroupName"/>
+
+<StringResource value="Create" id="ID_RTEditor_Peek_Create"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_Peek_Cancel"/>
+
+<StringResource value="Import" id="ID_RTEditor_MobileImporterView"/>
+
+<StringResource value="Import" id="ID_RTEditor_MobileImporterViewModel_Btn_Import"/>
+
+<StringResource value="Cancel" id="ID_RTEditor_MobileImporterViewModel_Btn_Cancel"/>
+
+</Resources>
+</StringResources>
