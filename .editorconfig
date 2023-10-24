@@ -1,0 +1,283 @@
+#공식 문서 : https://learn.microsoft.com/ko-kr/visualstudio/ide/code-styles-and-code-cleanup?view=vs-2022#code-styles-in-editorconfig-files
+#참고 링크 : https://xrdnk.hateblo.jp/entry/2020/12/01/191152
+root = true
+
+[*]
+indent_style = space
+charset = utf-8
+
+
+
+[*.{json,asmdef}]
+indent_size = 2
+
+# C# 파일
+[*.cs]
+# 들여쓰기 및 간격
+indent_size = 4
+tab_width = 4
+
+# 개행 설정
+end_of_line = crlf
+insert_final_newline = true
+
+### < Unity, Roslyn 의 특징적인 경고 없애기 > ###
+dotnet_diagnostic.IDE0051.severity = none # 사용되지 않는 private 필드에 대한 경고 없애기.
+dotnet_diagnostic.IDE0044.severity = none # 초기화되었지만 재할당되지 않은 private 필드에 대해 readonly를 권고하는 경고 없애기.
+dotnet_diagnostic.RCS1213.severity = none # (Roslyn) 사용되지 않는 필드에 대한 경고 없애기.
+dotnet_diagnostic.RCS1169.severity = none # (Roslyn) 초기화되었지만 재할당되지 않은 private 필드에 대해 readonly를 권고하는 경고 없애기.
+
+
+### < .NET 코딩 규칙 > ###
+# using 정리 관련
+dotnet_separate_import_directive_groups = false # using 선언 시, 네임스페이스 그룹 사이에 빈 줄을 추가하지 않도록 설정.
+dotnet_sort_system_directives_first = false # using 선언 시, 알파벳순으로 정렬하지 않도록 설정.
+file_header_template = unset # 코드 파일 최상단에 헤더 문자열 존재하지 않아도 되도록 설정.
+
+# this. 및 Me. 관련 설정
+# 각 요소에 대해 this. 또는 Me. 를 쓰지 않도록 설정.
+dotnet_style_qualification_for_event = false:silent
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_property = false:silent
+
+# 언어 키워드 및 BCL 유형 설정-
+# 각 요소에 대해 형식 이름보다 언어 키워드를 선호. (ex: Int32 보다는 int를 선호)
+dotnet_style_predefined_type_for_locals_parameters_members = true:silent
+dotnet_style_predefined_type_for_member_access = true:silent
+
+# 괄호 설정
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:suggestion # 산술 연산자 우선 순위가 명확하게 괄호를 사용하도록 추천.
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:suggestion # 관계형 연산자 우선 순위가 명확하게 괄호를 사용하도록 추천.
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:suggestion # 이진 연산자 우선 순위가 명확하게 괄호를 사용하도록 추천.
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:suggestion # . 연산자 우선 순위가 명백한 경우 괄호를 사용하지 않도록. (ex: a.b.Length) 
+
+# 접근 한정자 설정
+dotnet_style_require_accessibility_modifiers = always:error # 접근 한정자를 항상 지정하도록 설정.
+
+# 수식 레벨 설정
+dotnet_style_coalesce_expression = true:suggestion # 삼항 연산자에서 ?? 연산자를 사용하도록 추천. (ex: [ (x != null) ? x : y ] => [ x ?? y ])
+dotnet_style_collection_initializer = true:suggestion # 가능한 경우 컬렉션의 이니셜라이저를 사용하도록 추천. (ex : var list = new List<int> { 1, 2, 3 })
+dotnet_style_explicit_tuple_names = true:suggestion # Tuple 에서 ItemX를 사용하기 보다는 명시적으로 이름을 사용하도록 추천.
+dotnet_style_null_propagation = true:suggestion # null 조건부 연산자를 사용하도록 추천. (ex: o?.ToString())
+dotnet_style_object_initializer = true:suggestion # 가능한 경우 객체의 이니셜라이저를 사용하도록 추천. (ex : var c = new Customer() { Age = 21 })
+dotnet_style_operator_placement_when_wrapping = beginning_of_line:error # 이항 연산자를 줄바꿈 하는 경우 연산자의 위치를 줄의 시작 부분에 배치하도록.
+dotnet_style_prefer_compound_assignment = true:suggestion # 복합 할당식을 추천. (ex: x += 5)
+dotnet_style_prefer_conditional_expression_over_assignment = false:suggestion # 할당 시 삼항 연산자를 사용하지 않는 것을 추천.
+dotnet_style_prefer_conditional_expression_over_return = false:suggestion # 반환 시 삼항 연산자를 사용하지 않는 것을 추천.
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion # Tuple 사용 시 명시적 튜플 요소 이름을 사용하지 않는 것을 추천. (ex : var tuple = (age, name))
+dotnet_style_prefer_inferred_tuple_names = true:suggestion # 익명 형식 Tuple 사용 시 명시적 튜플 요소 이름을 사용하지 않는 것을 추천. (ex : var anon = new { age, name })
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion # null 체크 시, is null 사용을 추천. (ex : if (value is null))
+dotnet_style_prefer_simplified_boolean_expressions = true:error # 간소화된 조건식 사용을 추천. (true, false 중복 사용이 없는)
+dotnet_style_prefer_simplified_interpolation = true:suggestion # 문자열 보간 시 간소화된 문자열 사용을 추천. (ToString() 없어도 되는)
+
+# 필드 설정
+dotnet_style_readonly_field = true:suggestion # 초기화되었지만 재할당되지 않은 private 필드에 대해 readonly를 권고.
+
+# 매개변수 설정
+dotnet_code_quality_unused_parameters = all:suggestion # 사용하지 않는 매개변수 경고 표시.
+
+# 억제 설정(?)
+dotnet_remove_unnecessary_suppression_exclusions = none # 불필요한 규칙 비표시 구문을 제거(?).
+
+
+### < C# 코딩 규칙 > ###
+# 선언식의 오른쪽에 명시적으로 형식이 언급된 경우 var 사용을 선호.
+csharp_style_var_elsewhere = true:error
+csharp_style_var_for_built_in_types = true:error
+csharp_style_var_when_type_is_apparent = true:error
+
+# 식 본문 사용 설정
+csharp_style_expression_bodied_accessors = when_on_single_line:error # 접근자가 한 줄일 때 식 본문 선호.
+csharp_style_expression_bodied_constructors = false:error # 생성자에 식 본문 사용 불가.
+csharp_style_expression_bodied_indexers = false:error # 인덱서에 식 본문 사용 불가.
+csharp_style_expression_bodied_lambdas = when_on_single_line:error # 람다가 한 줄일 때 식 본문 선호.
+csharp_style_expression_bodied_local_functions = false:error # 로컬 함수에 식 본문 사용 불가.
+csharp_style_expression_bodied_methods = false:error # 메서드에 식 본문 사용 불가.
+csharp_style_expression_bodied_operators = when_on_single_line:error # 연산자 오버로딩이 한 줄일 때 식 본문 선호.
+csharp_style_expression_bodied_properties = when_on_single_line:error # 속성이 한 줄일 때 식 본문 선호.
+
+# 패턴 매칭 설정
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion # null 체크 시 패턴 일치 사용 선호.
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion # 형식 체크 시 패턴 일치 사용 선호.
+csharp_style_prefer_not_pattern = false:suggestion # not 사용을 추천하지 않음.
+csharp_style_prefer_pattern_matching = false:suggestion # 식 사용 시 패턴 일치 구문 사용을 추천하지 않음.
+csharp_style_prefer_switch_expression = true:suggestion # switch 식 사용 선호.
+
+# delegate 호출 설정
+csharp_style_conditional_delegate_call = true:suggestion # 람다식 및 delegate 호출 시 ?. 사용 선호.
+
+# 한정자 설정
+csharp_prefer_static_local_function = true:error # 로컬 함수를 static 으로 선언하도록. (참고 : https://www.csharpstudy.com/latest/CS8-misc.aspx)
+
+# 한정자 순서 설정
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:silent
+
+# 코드 블록 설정
+csharp_prefer_braces = true:error # 모든 경우에 중괄호를 반드시 사용하도록.
+csharp_prefer_simple_using_statement = true:suggestion # 간단한 using 문 사용 선호.
+
+# 식 레벨 설정(?)
+csharp_prefer_simple_default_expression = true:suggestion # 명시적인 선언의 경우 default(T) 보다 default 사용 선호.
+csharp_style_deconstructed_variable_declaration = false:error # Tuple 사용 시 분해된 변수 사용 추천하지 않음.
+csharp_style_inlined_variable_declaration = true:error # 매개변수 선언 시 out을 인라인으로 선언하는 것을 선호.
+csharp_style_pattern_local_over_anonymous_function = true:error # 익명 함수보다는 제대로 로컬 함수를 정의하는 것을 선호.
+csharp_style_prefer_index_operator = true:suggestion # 컬렉션의 끝부터 시작하는 인덱스 계산 시 ^연산자 사용 선호. (ex : var name = names[^1])
+csharp_style_prefer_range_operator = true:suggestion # 컬렉션의 부분을 추출할 때 ..연산자 사용 선호. (ex : var sub = sentence[0..^4])
+csharp_style_throw_expression = true:suggestion # throw 표현식 사용 선호.
+
+# using 지시문을 네임스페이스 외부에 배치하는 것을 선호.
+csharp_using_directive_placement = outside_namespace:suggestion
+
+
+### < C# 서식 규칙 > ###
+# 개행 설정
+csharp_new_line_before_open_brace = all # 모든 식에서 중괄호가 다음 줄에 존재하도록 설정.
+csharp_new_line_before_else = true # else 문을 새 줄에 배치.
+csharp_new_line_before_catch = true # catch 문을 새 줄에 배치.
+csharp_new_line_before_finally = true # finally 문을 새 줄에 배치.
+csharp_new_line_before_members_in_anonymous_types = true # 익명 형식의 멤버를 새 줄에 배치.
+csharp_new_line_before_members_in_object_initializers = true # 객체 이니셜라이저 멤버를 새 줄에 배치.
+csharp_new_line_between_query_expression_clauses = true # 쿼리식 절의 요소가 별도의 줄에 있도록.
+
+# 들여쓰기 설정
+csharp_indent_braces = false # 중괄호 블록을 들여쓰기 하지 않음.
+csharp_indent_block_contents = true # 중괄호 블록 내부 들여쓰기.
+csharp_indent_labels = flush_left # label이 가장 왼쪽 열에 배치되도록.
+csharp_indent_switch_labels = true # switch 문의 label 들여쓰기.
+csharp_indent_case_contents = true # switch 문에서 case 내부 들여쓰기.
+csharp_indent_case_contents_when_block = true # switch 문에서 case 내부 중괄호 블록 들여쓰기.
+
+# 공백 설정
+csharp_space_after_cast = false # cast와 값 사이에 공백 문자 없앰.
+csharp_space_after_colon_in_inheritance_clause = true # 상속 선언에서 콜론(:) 뒤 공백 추가.
+csharp_space_after_comma = true # 콤마(,) 뒤 공백 추가.
+csharp_space_after_dot = false # 마침표(.) 뒤 공백 문자 없앰.
+csharp_space_after_keywords_in_control_flow_statements = true # for 루프 키워드 뒤 공백 추가.
+csharp_space_after_semicolon_in_for_statement = true # for 루프 세미콜론(;) 뒤 공백 추가.
+csharp_space_around_binary_operators = before_and_after # 이항 연산자 앞뒤 공백 추가.
+csharp_space_around_declaration_statements = false # 선언문에서 추가적인 공백 사용하지 않음.
+csharp_space_before_colon_in_inheritance_clause = true # 상속 선언에서 콜론(:) 앞 공백 추가.
+csharp_space_before_comma = false # 콤마(,) 앞 공백 문자 없앰.
+csharp_space_before_dot = false # 마침표(.) 앞 공백 문자 없앰.
+csharp_space_before_semicolon_in_for_statement = false # for 루프 세미콜론(;) 앞 공백 추가.
+csharp_space_before_open_square_brackets = false # 대괄호 앞 공백 문자 없앰.
+csharp_space_between_empty_square_brackets = false # 빈 대괄호 사이 공백 문자 없앰.
+csharp_space_between_method_call_empty_parameter_list_parentheses = false # 메서드 호출 시 비어있는 인수 목록 괄호 내 공백 제거.
+csharp_space_between_method_call_name_and_opening_parenthesis = false # 메서드 호출 시 이름과 여는 괄호 사이의 공백 제거.
+csharp_space_between_method_call_parameter_list_parentheses = false # 메서드 호출 시 여닫는 괄호 사이의 공백 제거.
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false # 메소드 선언에서 비어있는 매개변수 목록 괄호 내 공백 제거.
+csharp_space_between_method_declaration_name_and_open_parenthesis = false # 메서드 선언 시 이름과 여는 괄호 사이 공백 제거.
+csharp_space_between_method_declaration_parameter_list_parentheses = false # 메서드 선언 시 여닫는 괄호 사이의 공백 제거.
+csharp_space_between_parentheses = false # 문, 식, cast 등에서 여닫는 괄호 사이 공백 제거.
+csharp_space_between_square_brackets = false # 비어 있지 않은 대괄호 공백 문자 제거.
+
+# 블록 위치 설정
+csharp_preserve_single_line_blocks = false : error # 코드 블록을 별도의 줄에 두는 것을 선호.
+csharp_preserve_single_line_statements = false : error # 선언문을 별도의 줄에 두는 것을 선호.
+
+
+### < 명명 규칙 > ###
+# All constant fields must be PascalCase
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1303.md
+dotnet_naming_symbols.constant_fields_group.applicable_accessibilities = public, internal, protected_internal, protected, private_protected, private
+dotnet_naming_symbols.constant_fields_group.required_modifiers         = const
+dotnet_naming_symbols.constant_fields_group.applicable_kinds           = field
+dotnet_naming_rule.constant_fields_must_be_pascal_case_rule.symbols    = constant_fields_group
+dotnet_naming_rule.constant_fields_must_be_pascal_case_rule.style      = pascal_case
+dotnet_naming_rule.constant_fields_must_be_pascal_case_rule.severity   = error
+
+# All static readonly fields must be PascalCase
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1311.md
+dotnet_naming_symbols.static_readonly_fields_group.applicable_accessibilities = public, internal, protected_internal, protected, private_protected, private
+dotnet_naming_symbols.static_readonly_fields_group.required_modifiers         = static, readonly
+dotnet_naming_symbols.static_readonly_fields_group.applicable_kinds           = field
+dotnet_naming_rule.static_readonly_fields_must_be_pascal_case_rule.symbols    = static_readonly_fields_group
+dotnet_naming_rule.static_readonly_fields_must_be_pascal_case_rule.style      = pascal_case
+dotnet_naming_rule.static_readonly_fields_must_be_pascal_case_rule.severity   = error
+
+# Private fields must be camelCase
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1306.md
+dotnet_naming_symbols.private_fields_group.applicable_accessibilities = private
+dotnet_naming_symbols.private_fields_group.applicable_kinds           = field
+dotnet_naming_rule.private_fields_must_be_camel_case_rule.symbols     = private_fields_group
+dotnet_naming_rule.private_fields_must_be_camel_case_rule.style       = camel_case
+dotnet_naming_rule.private_fields_must_be_camel_case_rule.severity    = error
+
+# Local variables must be camelCase
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1312.md
+dotnet_naming_symbols.local_fields_group.applicable_accessibilities = local
+dotnet_naming_symbols.local_fields_group.applicable_kinds           = local
+dotnet_naming_rule.local_fields_must_be_camel_case_rule.symbols     = local_fields_group
+dotnet_naming_rule.local_fields_must_be_camel_case_rule.style       = camel_case
+dotnet_naming_rule.local_fields_must_be_camel_case_rule.severity    = error
+
+# All of the following must be PascalCase:
+# - Namespaces
+#   https://docs.microsoft.com/dotnet/standard/design-guidelines/names-of-namespaces
+#   https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1300.md
+# - Classes and Enumerations
+#   https://docs.microsoft.com/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces
+#   https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1300.md
+# - Delegates
+#   https://docs.microsoft.com/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces#names-of-common-types
+# - Constructors, Properties, Events, Methods
+#   https://docs.microsoft.com/dotnet/standard/design-guidelines/names-of-type-members
+dotnet_naming_symbols.element_group.applicable_kinds = namespace, class, enum, struct, delegate, event, method, property
+dotnet_naming_rule.element_rule.symbols              = element_group
+dotnet_naming_rule.element_rule.style                = pascal_case
+dotnet_naming_rule.element_rule.severity             = error
+
+# Interfaces use PascalCase and are prefixed with uppercase 'I'
+# https://docs.microsoft.com/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces
+dotnet_naming_symbols.interface_group.applicable_kinds = interface
+dotnet_naming_rule.interface_rule.symbols              = interface_group
+dotnet_naming_rule.interface_rule.style                = pascal_case_begins_with_i
+dotnet_naming_rule.interface_rule.severity             = error
+
+# Generics Type Parameters use PascalCase and are prefixed with uppercase 'T'
+# https://docs.microsoft.com/dotnet/standard/design-guidelines/names-of-classes-structs-and-interfaces
+dotnet_naming_symbols.type_parameter_group.applicable_kinds = type_parameter
+dotnet_naming_rule.type_parameter_rule.symbols              = type_parameter_group
+dotnet_naming_rule.type_parameter_rule.style                = pascal_case_begins_with_t
+dotnet_naming_rule.type_parameter_rule.severity             = error
+
+# Function parameters use camelCase
+# https://docs.microsoft.com/dotnet/standard/design-guidelines/naming-parameters
+dotnet_naming_symbols.parameters_group.applicable_kinds = parameter
+dotnet_naming_rule.parameters_rule.symbols              = parameters_group
+dotnet_naming_rule.parameters_rule.style                = camel_case
+dotnet_naming_rule.parameters_rule.severity             = error
+
+
+### < 명명 스타일 정의 > ###
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.camel_case.required_prefix = 
+dotnet_naming_style.camel_case.required_suffix = 
+dotnet_naming_style.camel_case.word_separator = 
+dotnet_naming_style.camel_case.capitalization = camel_case
+
+dotnet_naming_style.pascal_case_begins_with_i.required_prefix = I
+dotnet_naming_style.pascal_case_begins_with_i.required_suffix = 
+dotnet_naming_style.pascal_case_begins_with_i.word_separator = 
+dotnet_naming_style.pascal_case_begins_with_i.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case_begins_with_t.required_prefix = T
+dotnet_naming_style.pascal_case_begins_with_t.required_suffix = 
+dotnet_naming_style.pascal_case_begins_with_t.word_separator = 
+dotnet_naming_style.pascal_case_begins_with_t.capitalization = pascal_case
+
+dotnet_naming_style.camel_case_begins_with_underscore.required_prefix = _
+dotnet_naming_style.camel_case_begins_with_underscore.required_suffix = 
+dotnet_naming_style.camel_case_begins_with_underscore.word_separator = 
+dotnet_naming_style.camel_case_begins_with_underscore.capitalization = camel_case
+
+dotnet_naming_style.all_upper.required_prefix = 
+dotnet_naming_style.all_upper.required_suffix = 
+dotnet_naming_style.all_upper.word_separator = _
+dotnet_naming_style.all_upper.capitalization = all_upper
+
